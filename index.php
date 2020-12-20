@@ -79,10 +79,8 @@
                     $login_exist = true;
                   }
                 }
-              }
               ?>
               
-              <?php if ($name && $password) { ?>
                 <?php if ($login_exist) { ?>
                   <div class="message success">
                     <p>Вы залогинены!</p>
