@@ -71,7 +71,7 @@
 
               $logins = file_get_contents("logins.txt");
 
-              $logins_array = explode(PHP_EOL, $logins);
+              $logins_array = explode("\n", $logins);
               print  $name . '/' . $password;
               print ';';
 print_r($logins_array);
