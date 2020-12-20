@@ -72,13 +72,10 @@
               $logins = file_get_contents("logins.txt");
 
               $logins_array = explode("\n", $logins);
-              print  $name . '/' . $password;
-              print ';';
-print_r($logins_array);
               if ($name && $password) {
                 $login_exist = false;
                 foreach ($logins_array as $login) {
-                  if ($login == $name . '/' . $password) {
+                  if (trim($login) == $name . '/' . $password) {
                     $login_exist = true;
                   }
                 }
